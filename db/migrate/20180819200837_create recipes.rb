@@ -1,4 +1,4 @@
-class CreateUsers < ActiveRecord::Migration
+class CreateRecipes < ActiveRecord::Migration
   def up
     create_table :recipes do |t|
       t.string :name
