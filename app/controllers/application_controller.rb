@@ -10,5 +10,5 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
   post '/recipes'
-    @recipe = Recipe.create(:name => params[:name], )
+    @recipe = Recipe.create(:name => params[:name], :ingredients => params[:ingredients], )
 end
