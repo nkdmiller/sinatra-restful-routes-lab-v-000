@@ -10,5 +10,5 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
   post '/recipes'
-    @recipe = Recipe.create
+    @recipe = Recipe.create(:name)
 end
