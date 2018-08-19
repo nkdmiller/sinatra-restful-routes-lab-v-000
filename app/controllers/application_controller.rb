@@ -21,5 +21,5 @@ class ApplicationController < Sinatra::Base
     @article = Article.find_by_id(params[:id])
     erb :edit
   end
-  
+  get
 end
