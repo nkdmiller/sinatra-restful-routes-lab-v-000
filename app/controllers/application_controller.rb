@@ -14,4 +14,5 @@ class ApplicationController < Sinatra::Base
     redirect to "/recipes/#{@recipe.id}"
   end
   post '/recipes/:id'
+    @recipe = Recipe.find_by()
 end
